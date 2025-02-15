@@ -1,0 +1,8 @@
+//doesnt work but i dont really care cuz rubber block should be able to be mined by all pickaxes
+//i was just addding this file to test shit out
+{
+  "replace": false,
+  "values": [
+    "horsesmod:rubbermat_block"
+  ]
+}

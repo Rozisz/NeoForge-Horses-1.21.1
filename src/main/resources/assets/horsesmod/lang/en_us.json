@@ -1,6 +1,29 @@
 {
   "item.horsesmod.sugarcubes": "Sugar Cubes",
   "item.horsesmod.sugarbeet": "Sugarbeet",
+  "item.horsesmod.manure": "Manure",
 
-  "block.horsesmod.rubbermat_block": "Rubber Matting"
+  "block.horsesmod.rubbermat_block": "Rubber Matting",
+  "block.horsesmod.strawbed_block": "Straw Bedding",
+
+  "block.horsesmod.rubberwood_planks": "Rubberwood Planks",
+  "block.horsesmod.rubberwood_stairs": "Rubberwood Stairs",
+  "block.horsesmod.rubberwood_slab": "Rubberwood Slab",
+  "block.horsesmod.rubberwood_pressure_plate": "Rubberwood Pressure Plate",
+  "block.horsesmod.rubberwood_button": "Rubberwood Button",
+  "block.horsesmod.rubberwood_fence": "Rubberwood Fence",
+  "block.horsesmod.rubberwood_fence_gate": "Rubberwood Fence Gate",
+  "block.horsesmod.rubberwood_door": "Rubberwood Door",
+  "block.horsesmod.rubberwood_trapdoor": "Rubberwood Trapdoor",
+
+
+
+
+
+
+  "creativetab.horsesmod.horses_items": "Horses Items",
+  "creativetab.horsesmod.horses_blocks": "Horses Blocks",
+
+  "tooltip.horsesmod.manure.shift_down": "can be used as a fuel source in smelting",
+  "tooltip.horsesmod.manure": "shift for info"
 }

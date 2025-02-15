@@ -2,6 +2,7 @@ package net.rozisz.horsesmod;
 
 import net.minecraft.world.item.CreativeModeTabs;
 import net.rozisz.horsesmod.block.ModBlocks;
+import net.rozisz.horsesmod.item.ModCreativeModeTabs;
 import net.rozisz.horsesmod.item.ModItems;
 import org.slf4j.Logger;
 
@@ -43,6 +44,10 @@ public class HorsesMod
         // Do not add this line if there are no @SubscribeEvent-annotated functions in this class, like onServerStarting() below.
         NeoForge.EVENT_BUS.register(this);
 
+
+        //Registers my creative mode inventory tab for all my mod items
+        ModCreativeModeTabs.register(modEventBus);
+
         //calling my items from ModItems
         ModItems.register(modEventBus);
         //calling my blocks formModBlocks
@@ -63,14 +68,6 @@ public class HorsesMod
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event)
     {
-        if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
-            event.accept(ModItems.SUGARCUBES);
-            event.accept(ModItems.SUGARBEET);
-        }
-
-        if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
-            event.accept(ModBlocks.RUBBERMAT_BLOCK);
-        }
 
     }
 
