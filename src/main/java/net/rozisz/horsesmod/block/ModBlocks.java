@@ -10,6 +10,7 @@ import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.rozisz.horsesmod.HorsesMod;
+import net.rozisz.horsesmod.block.custom.WindowBlock;
 import net.rozisz.horsesmod.item.ModItems;
 
 import java.util.function.Supplier;
@@ -69,7 +70,7 @@ public class ModBlocks {
 
     public static final DeferredBlock<IronBarsBlock> RUBBERWOOD_GLASS_PANE = registerBlock("rubberwood_glass_pane",
             () -> new IronBarsBlock(BlockBehaviour.Properties.of()
-                    .strength(0.5f).sound(SoundType.CHERRY_WOOD).noOcclusion()));
+                    .strength(0.5f).sound(SoundType.GLASS).noOcclusion()));
 
 
 

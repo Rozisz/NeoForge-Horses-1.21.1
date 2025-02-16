@@ -11,6 +11,12 @@
   "item.horsesmod.straw_bundle": "Straw",
   "item.horsesmod.manure": "Manure",
 
+  "item.horsesmod.copper_sword": "Copper Sword",
+  "item.horsesmod.copper_pickaxe": "Copper Pickaxe",
+  "item.horsesmod.copper_shovel": "Copper Shovel",
+  "item.horsesmod.copper_axe": "Copper Axe",
+  "item.horsesmod.copper_hoe": "Copper Hoe",
+
   "block.horsesmod.rubbermat_block": "Rubber Matting",
   "block.horsesmod.strawbed_block": "Straw Bedding",
 
@@ -23,6 +29,7 @@
   "block.horsesmod.rubberwood_fence_gate": "Rubberwood Fence Gate",
   "block.horsesmod.rubberwood_door": "Rubberwood Door",
   "block.horsesmod.rubberwood_trapdoor": "Rubberwood Trapdoor",
+  "block.horsesmod.rubberwood_glass_pane": "Rubberwood Window Pane",
 
 
 

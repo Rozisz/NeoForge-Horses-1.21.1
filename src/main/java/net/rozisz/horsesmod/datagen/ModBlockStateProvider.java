@@ -17,6 +17,8 @@ public class ModBlockStateProvider extends BlockStateProvider {
     protected void registerStatesAndModels() {
         blockWithItem(ModBlocks.RUBBERMAT_BLOCK);
         blockWithItem(ModBlocks.STRAWBED_BLOCK);
+
+        //RUBBERWOOD RELATED BLOCKS
         blockWithItem(ModBlocks.RUBBERWOOD_PLANKS);
 
         stairsBlock(ModBlocks.RUBBERWOOD_STAIRS.get(), blockTexture(ModBlocks.RUBBERWOOD_PLANKS.get()));
@@ -31,16 +33,16 @@ public class ModBlockStateProvider extends BlockStateProvider {
         doorBlockWithRenderType(ModBlocks.RUBBERWOOD_DOOR.get(), modLoc("block/rubberwood_door_bottom"), modLoc("block/rubberwood_door_top"), "cutout");
         trapdoorBlockWithRenderType(ModBlocks.RUBBERWOOD_TRAPDOOR.get(), modLoc("block/rubberwood_trapdoor"), true, "cutout");
 
-        paneBlock(ModBlocks.RUBBERWOOD_GLASS_PANE.get(), blockTexture(ModBlocks.RUBBERWOOD_GLASS_PANE.get()), blockTexture(ModBlocks.RUBBERWOOD_GLASS_PANE.get()));
-
+        paneBlockWithRenderType(ModBlocks.RUBBERWOOD_GLASS_PANE.get(), modLoc("block/rubberwood_glass_pane"), modLoc("block/rubberwood_glass_pane"), "cutout");
 
         blockItem(ModBlocks.RUBBERWOOD_STAIRS);
         blockItem(ModBlocks.RUBBERWOOD_SLAB);
         blockItem(ModBlocks.RUBBERWOOD_PRESSURE_PLATE);
         blockItem(ModBlocks.RUBBERWOOD_FENCE_GATE);
         blockItem(ModBlocks.RUBBERWOOD_TRAPDOOR, "_bottom");
-    }
 
+
+    }
 
 
     private void blockWithItem(DeferredBlock<?> deferredBlock) {
