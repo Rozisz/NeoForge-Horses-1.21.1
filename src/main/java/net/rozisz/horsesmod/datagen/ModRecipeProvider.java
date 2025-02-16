@@ -1,16 +1,13 @@
 package net.rozisz.horsesmod.datagen;
 
-import net.minecraft.client.Minecraft;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.RecipeCategory;
 import net.minecraft.data.recipes.RecipeOutput;
 import net.minecraft.data.recipes.RecipeProvider;
-import net.minecraft.data.recipes.ShapedRecipeBuilder;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.neoforged.neoforge.common.conditions.IConditionBuilder;
 import net.rozisz.horsesmod.block.ModBlocks;
-import net.rozisz.horsesmod.item.ModItems;
 
 import java.util.concurrent.CompletableFuture;
 
@@ -21,7 +18,6 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 
     @Override
     protected void buildRecipes(RecipeOutput recipeOutput) {
-
 
         stairBuilder(ModBlocks.RUBBERWOOD_STAIRS.get(), Ingredient.of(ModBlocks.RUBBERWOOD_PLANKS)).group("rubberwood")
                 .unlockedBy("has_rubberwood", has(ModBlocks.RUBBERWOOD_PLANKS)).save(recipeOutput);
@@ -39,16 +35,10 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         fenceGateBuilder(ModBlocks.RUBBERWOOD_FENCE_GATE.get(), Ingredient.of(ModBlocks.RUBBERWOOD_PLANKS.get())).group("rubberwood")
                 .unlockedBy("has_rubberwood", has(ModBlocks.RUBBERWOOD_PLANKS.get())).save(recipeOutput);
 
-
         doorBuilder(ModBlocks.RUBBERWOOD_DOOR.get(), Ingredient.of(ModBlocks.RUBBERWOOD_PLANKS.get())).group("rubberwood")
                 .unlockedBy("has_rubberwood", has(ModBlocks.RUBBERWOOD_PLANKS.get())).save(recipeOutput);
 
         trapdoorBuilder(ModBlocks.RUBBERWOOD_TRAPDOOR.get(), Ingredient.of(ModBlocks.RUBBERWOOD_PLANKS.get())).group("rubberwood")
                 .unlockedBy("has_rubberwood", has(ModBlocks.RUBBERWOOD_PLANKS.get())).save(recipeOutput);
-
-
-
-
-
     }
 }

@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/template_glass_pane_noside_alt",
+  "textures": {
+    "pane": "horsesmod:block/rubberwood_window_mid"
+  },
+  "render_type": "cutout"
+}

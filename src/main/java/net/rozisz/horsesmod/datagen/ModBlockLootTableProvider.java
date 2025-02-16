@@ -4,7 +4,6 @@ import net.minecraft.core.Holder;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.data.loot.BlockLootSubProvider;
-import net.minecraft.world.flag.FeatureFlagSet;
 import net.minecraft.world.flag.FeatureFlags;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.enchantment.Enchantment;
@@ -44,12 +43,10 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         dropSelf(ModBlocks.RUBBERWOOD_FENCE.get());
         dropSelf(ModBlocks.RUBBERWOOD_FENCE_GATE.get());
         dropSelf(ModBlocks.RUBBERWOOD_TRAPDOOR.get());
-        dropSelf(ModBlocks.RUBBERWOOD_GLASS_PANE.get());
+        dropSelf(ModBlocks.RUBBERWOOD_WINDOW.get());
 
         add(ModBlocks.RUBBERWOOD_DOOR.get(),
                 block -> createDoorTable(ModBlocks.RUBBERWOOD_DOOR.get()));
-
-
     }
 
 

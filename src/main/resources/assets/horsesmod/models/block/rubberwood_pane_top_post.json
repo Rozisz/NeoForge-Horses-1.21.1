@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/template_glass_pane_post",
+  "textures": {
+    "pane": "horsesmod:block/rubberwood_window_top",
+    "edge": "horsesmod:block/rubberwood_window_pane_top"
+  },
+  "render_type": "cutout"
+}

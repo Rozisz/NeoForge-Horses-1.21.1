@@ -62,9 +62,7 @@ public class ModCreativeModeTabs {
 
                         output.accept(ModBlocks.RUBBERWOOD_DOOR);
                         output.accept(ModBlocks.RUBBERWOOD_TRAPDOOR);
-                        output.accept(ModBlocks.RUBBERWOOD_GLASS_PANE);
-
-
+                        output.accept(ModBlocks.RUBBERWOOD_WINDOW);
                     })
                     .build());
 

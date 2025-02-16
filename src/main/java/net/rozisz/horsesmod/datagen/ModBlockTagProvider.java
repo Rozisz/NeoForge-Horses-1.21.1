@@ -22,7 +22,6 @@ public class ModBlockTagProvider extends BlockTagsProvider {
         tag(BlockTags.MINEABLE_WITH_PICKAXE)
                 .add(ModBlocks.RUBBERMAT_BLOCK.get());
 
-
         tag(BlockTags.FENCES).add(ModBlocks.RUBBERWOOD_FENCE.get());
         tag(BlockTags.FENCE_GATES).add(ModBlocks.RUBBERWOOD_FENCE_GATE.get());
 

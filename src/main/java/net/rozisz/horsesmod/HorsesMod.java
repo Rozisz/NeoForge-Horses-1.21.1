@@ -1,8 +1,6 @@
 package net.rozisz.horsesmod;
 
-import net.minecraft.world.item.CreativeModeTabs;
 import net.rozisz.horsesmod.block.ModBlocks;
-import net.rozisz.horsesmod.component.ModDataComponents;
 import net.rozisz.horsesmod.item.ModCreativeModeTabs;
 import net.rozisz.horsesmod.item.ModItems;
 import org.slf4j.Logger;
@@ -53,10 +51,6 @@ public class HorsesMod
         ModItems.register(modEventBus);
         //calling my blocks formModBlocks
         ModBlocks.register(modEventBus);
-
-        ModDataComponents.register(modEventBus);
-
-
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);

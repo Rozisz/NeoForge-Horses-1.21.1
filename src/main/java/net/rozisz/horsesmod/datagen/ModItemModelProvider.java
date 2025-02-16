@@ -35,9 +35,8 @@ public class ModItemModelProvider extends ItemModelProvider {
         buttonItem(ModBlocks.RUBBERWOOD_BUTTON, ModBlocks.RUBBERWOOD_PLANKS);
         fenceItem(ModBlocks.RUBBERWOOD_FENCE, ModBlocks.RUBBERWOOD_PLANKS);
 
-
+        basicItem(ModBlocks.RUBBERWOOD_WINDOW.asItem());
         basicItem(ModBlocks.RUBBERWOOD_DOOR.asItem());
-        basicItem(ModBlocks.RUBBERWOOD_GLASS_PANE.asItem());
 
         handheldItem(ModItems.COPPER_SWORD);
         handheldItem(ModItems.COPPER_PICKAXE);

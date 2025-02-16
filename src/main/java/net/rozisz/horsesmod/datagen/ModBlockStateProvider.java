@@ -33,21 +33,17 @@ public class ModBlockStateProvider extends BlockStateProvider {
         doorBlockWithRenderType(ModBlocks.RUBBERWOOD_DOOR.get(), modLoc("block/rubberwood_door_bottom"), modLoc("block/rubberwood_door_top"), "cutout");
         trapdoorBlockWithRenderType(ModBlocks.RUBBERWOOD_TRAPDOOR.get(), modLoc("block/rubberwood_trapdoor"), true, "cutout");
 
-        paneBlockWithRenderType(ModBlocks.RUBBERWOOD_GLASS_PANE.get(), modLoc("block/rubberwood_glass_pane"), modLoc("block/rubberwood_glass_pane"), "cutout");
-
         blockItem(ModBlocks.RUBBERWOOD_STAIRS);
         blockItem(ModBlocks.RUBBERWOOD_SLAB);
         blockItem(ModBlocks.RUBBERWOOD_PRESSURE_PLATE);
         blockItem(ModBlocks.RUBBERWOOD_FENCE_GATE);
         blockItem(ModBlocks.RUBBERWOOD_TRAPDOOR, "_bottom");
-
-
     }
-
 
     private void blockWithItem(DeferredBlock<?> deferredBlock) {
         simpleBlockWithItem(deferredBlock.get(),cubeAll(deferredBlock.get()));
     }
+
     private void blockItem(DeferredBlock<?> deferredBlock) {
         simpleBlockItem(deferredBlock.get(), new ModelFile.UncheckedModelFile("horsesmod:block/" + deferredBlock.getId().getPath()));
     }

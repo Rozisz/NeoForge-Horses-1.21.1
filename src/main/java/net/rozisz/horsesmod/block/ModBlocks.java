@@ -1,4 +1,6 @@
 package net.rozisz.horsesmod.block;
+import net.minecraft.client.resources.model.Material;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.DyeColor;
 import net.minecraft.world.item.Item;
@@ -6,6 +8,8 @@ import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.properties.BlockSetType;
 import net.minecraft.world.level.block.state.properties.WoodType;
+import net.minecraft.world.level.material.MapColor;
+import net.minecraft.world.level.material.PushReaction;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
@@ -68,12 +72,8 @@ public class ModBlocks {
             () -> new TrapDoorBlock(BlockSetType.CHERRY,BlockBehaviour.Properties.of()
                     .strength(0.5f).sound(SoundType.CHERRY_WOOD).noOcclusion()));
 
-    public static final DeferredBlock<IronBarsBlock> RUBBERWOOD_GLASS_PANE = registerBlock("rubberwood_glass_pane",
-            () -> new IronBarsBlock(BlockBehaviour.Properties.of()
-                    .strength(0.5f).sound(SoundType.GLASS).noOcclusion()));
-
-
-
+    public static final DeferredBlock<WindowBlock> RUBBERWOOD_WINDOW = registerBlock("rubberwood_window",
+            () -> new WindowBlock(BlockBehaviour.Properties.of().strength(0.2f).randomTicks().sound(SoundType.CHERRY_WOOD).noOcclusion().isViewBlocking((state, world, pos) -> false).isSuffocating((state, world, pos) -> false).mapColor(MapColor.GRASS).pushReaction(PushReaction.IGNORE)));
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);

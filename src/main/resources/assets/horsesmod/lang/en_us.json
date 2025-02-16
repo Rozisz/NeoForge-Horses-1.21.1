@@ -30,15 +30,11 @@
   "block.horsesmod.rubberwood_door": "Rubberwood Door",
   "block.horsesmod.rubberwood_trapdoor": "Rubberwood Trapdoor",
   "block.horsesmod.rubberwood_glass_pane": "Rubberwood Window Pane",
-
-
-
-
-
+  "block.horsesmod.rubberwood_window": "Rubberwood Window",
 
   "creativetab.horsesmod.horses_items": "Horses Items",
   "creativetab.horsesmod.horses_blocks": "Horses Blocks",
 
-  "tooltip.horsesmod.manure.shift_down": "can be used as a fuel source in smelting",
-  "tooltip.horsesmod.manure": "shift for info"
+  "tooltip.horsesmod.manure.shift_down": "Can be used as a fuel source in smelting",
+  "tooltip.horsesmod.manure": "Shift for info"
 }
