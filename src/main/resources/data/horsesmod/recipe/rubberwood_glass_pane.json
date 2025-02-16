@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": {
+      "item": "horsesmod:rubberwood_planks"
+    },
+    "A": {
+      "item": "minecraft:glass"
+    }
+  },
+  "pattern": [
+    "BBB",
+    "BAB",
+    "BBB"
+  ],
+  "result": {
+    "count": 1,
+    "id": "horsesmod:rubberwood_glass_pane"
+
+  }
+}

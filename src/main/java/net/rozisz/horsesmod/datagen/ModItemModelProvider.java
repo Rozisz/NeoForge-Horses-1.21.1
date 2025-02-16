@@ -19,12 +19,24 @@ public class ModItemModelProvider extends ItemModelProvider {
     protected void registerModels() {
         basicItem(ModItems.SUGARCUBES.get());
         basicItem(ModItems.SUGARBEET.get());
+        basicItem(ModItems.CORN_CROP.get());
+        basicItem(ModItems.LETTUCE_CROP.get());
+        basicItem(ModItems.TOMATO_CROP.get());
+        basicItem(ModItems.ONION_CROP.get());
+        basicItem(ModItems.GARLIC_CROP.get());
+        basicItem(ModItems.BARLEY_CROP.get());
+        basicItem(ModItems.OATS_CROP.get());
+        basicItem(ModItems.STRAW_BUNDLE.get());
+
         basicItem(ModItems.MANURE.get());
 
         buttonItem(ModBlocks.RUBBERWOOD_BUTTON, ModBlocks.RUBBERWOOD_PLANKS);
         fenceItem(ModBlocks.RUBBERWOOD_FENCE, ModBlocks.RUBBERWOOD_PLANKS);
 
+
         basicItem(ModBlocks.RUBBERWOOD_DOOR.asItem());
+        basicItem(ModBlocks.RUBBERWOOD_GLASS_PANE.asItem());
+
 
 
     }

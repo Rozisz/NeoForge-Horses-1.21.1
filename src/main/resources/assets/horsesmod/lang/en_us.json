@@ -1,6 +1,14 @@
 {
   "item.horsesmod.sugarcubes": "Sugar Cubes",
   "item.horsesmod.sugarbeet": "Sugarbeet",
+  "item.horsesmod.corn_crop": "Corn Cob",
+  "item.horsesmod.lettuce_crop": "Lettuce",
+  "item.horsesmod.tomato_crop": "Tomato",
+  "item.horsesmod.onion_crop": "Onion",
+  "item.horsesmod.garlic_crop": "Garlic",
+  "item.horsesmod.barley_crop": "Barley",
+  "item.horsesmod.oats_crop": "Oats",
+  "item.horsesmod.straw_bundle": "Straw",
   "item.horsesmod.manure": "Manure",
 
   "block.horsesmod.rubbermat_block": "Rubber Matting",

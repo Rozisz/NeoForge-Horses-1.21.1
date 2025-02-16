@@ -23,6 +23,14 @@ public class ModCreativeModeTabs {
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModItems.SUGARCUBES);
                         output.accept(ModItems.SUGARBEET);
+                        output.accept(ModItems.CORN_CROP);
+                        output.accept(ModItems.LETTUCE_CROP);
+                        output.accept(ModItems.TOMATO_CROP);
+                        output.accept(ModItems.ONION_CROP);
+                        output.accept(ModItems.GARLIC_CROP);
+                        output.accept(ModItems.BARLEY_CROP);
+                        output.accept(ModItems.OATS_CROP);
+                        output.accept(ModItems.STRAW_BUNDLE);
                         output.accept(ModItems.MANURE);
                     })
                     .build());
@@ -48,6 +56,7 @@ public class ModCreativeModeTabs {
 
                         output.accept(ModBlocks.RUBBERWOOD_DOOR);
                         output.accept(ModBlocks.RUBBERWOOD_TRAPDOOR);
+                        output.accept(ModBlocks.RUBBERWOOD_GLASS_PANE);
 
 
                     })

@@ -44,6 +44,7 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         dropSelf(ModBlocks.RUBBERWOOD_FENCE.get());
         dropSelf(ModBlocks.RUBBERWOOD_FENCE_GATE.get());
         dropSelf(ModBlocks.RUBBERWOOD_TRAPDOOR.get());
+        dropSelf(ModBlocks.RUBBERWOOD_GLASS_PANE.get());
 
         add(ModBlocks.RUBBERWOOD_DOOR.get(),
                 block -> createDoorTable(ModBlocks.RUBBERWOOD_DOOR.get()));

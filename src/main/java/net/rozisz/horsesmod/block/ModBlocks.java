@@ -1,5 +1,6 @@
 package net.rozisz.horsesmod.block;
 import net.minecraft.world.item.BlockItem;
+import net.minecraft.world.item.DyeColor;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
@@ -64,6 +65,10 @@ public class ModBlocks {
 
     public static final DeferredBlock<TrapDoorBlock> RUBBERWOOD_TRAPDOOR = registerBlock("rubberwood_trapdoor",
             () -> new TrapDoorBlock(BlockSetType.CHERRY,BlockBehaviour.Properties.of()
+                    .strength(0.5f).sound(SoundType.CHERRY_WOOD).noOcclusion()));
+
+    public static final DeferredBlock<IronBarsBlock> RUBBERWOOD_GLASS_PANE = registerBlock("rubberwood_glass_pane",
+            () -> new IronBarsBlock(BlockBehaviour.Properties.of()
                     .strength(0.5f).sound(SoundType.CHERRY_WOOD).noOcclusion()));
 
 
