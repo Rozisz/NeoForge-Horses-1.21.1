@@ -7,6 +7,7 @@ import net.neoforged.neoforge.common.data.BlockTagsProvider;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import net.rozisz.horsesmod.HorsesMod;
 import net.rozisz.horsesmod.block.ModBlocks;
+import net.rozisz.horsesmod.util.ModTags;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.concurrent.CompletableFuture;
@@ -25,8 +26,11 @@ public class ModBlockTagProvider extends BlockTagsProvider {
         tag(BlockTags.FENCES).add(ModBlocks.RUBBERWOOD_FENCE.get());
         tag(BlockTags.FENCE_GATES).add(ModBlocks.RUBBERWOOD_FENCE_GATE.get());
 
+        tag(ModTags.Blocks.NEEDS_COPPER_TOOL)
+                .addTag(BlockTags.NEEDS_IRON_TOOL);
 
-
-
+        tag(ModTags.Blocks.INCORRECT_FOR_COPPER_TOOL)
+                .addTag(BlockTags.INCORRECT_FOR_IRON_TOOL)
+                .remove(ModTags.Blocks.NEEDS_COPPER_TOOL);
     }
 }

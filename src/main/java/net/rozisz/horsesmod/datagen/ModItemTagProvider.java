@@ -3,6 +3,7 @@ package net.rozisz.horsesmod.datagen;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.tags.ItemTagsProvider;
+import net.minecraft.tags.ItemTags;
 import net.minecraft.world.level.block.Block;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import net.rozisz.horsesmod.HorsesMod;
@@ -23,5 +24,16 @@ public class ModItemTagProvider extends ItemTagsProvider {
                 .add(ModItems.MANURE.get())
                 .add(ModItems.SUGARBEET.get())
                 .add(ModItems.SUGARCUBES.get());
+
+        tag(ItemTags.SWORDS)
+                .add(ModItems.COPPER_SWORD.get());
+        tag(ItemTags.PICKAXES)
+                .add(ModItems.COPPER_PICKAXE.get());
+        tag(ItemTags.SHOVELS)
+                .add(ModItems.COPPER_SHOVEL.get());
+        tag(ItemTags.AXES)
+                .add(ModItems.COPPER_AXE.get());
+        tag(ItemTags.HOES)
+                .add(ModItems.COPPER_HOE.get());
     }
 }

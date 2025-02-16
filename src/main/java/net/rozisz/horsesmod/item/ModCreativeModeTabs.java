@@ -32,6 +32,12 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.OATS_CROP);
                         output.accept(ModItems.STRAW_BUNDLE);
                         output.accept(ModItems.MANURE);
+
+                        output.accept(ModItems.COPPER_SWORD);
+                        output.accept(ModItems.COPPER_PICKAXE);
+                        output.accept(ModItems.COPPER_SHOVEL);
+                        output.accept(ModItems.COPPER_AXE);
+                        output.accept(ModItems.COPPER_HOE);
                     })
                     .build());
 

@@ -2,6 +2,7 @@ package net.rozisz.horsesmod;
 
 import net.minecraft.world.item.CreativeModeTabs;
 import net.rozisz.horsesmod.block.ModBlocks;
+import net.rozisz.horsesmod.component.ModDataComponents;
 import net.rozisz.horsesmod.item.ModCreativeModeTabs;
 import net.rozisz.horsesmod.item.ModItems;
 import org.slf4j.Logger;
@@ -53,9 +54,12 @@ public class HorsesMod
         //calling my blocks formModBlocks
         ModBlocks.register(modEventBus);
 
+        ModDataComponents.register(modEventBus);
+
+
+
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
-
         // Register our mod's ModConfigSpec so that FML can create and load the config file for us
         modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
     }
