@@ -33,11 +33,19 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.STRAW_BUNDLE);
                         output.accept(ModItems.MANURE);
 
+                        output.accept(ModItems.COPPER_HELMET);
+                        output.accept(ModItems.COPPER_CHESTPLATE);
+                        output.accept(ModItems.COPPER_LEGGINGS);
+                        output.accept(ModItems.COPPER_BOOTS);
+                        output.accept(ModItems.COPPER_HORSE_ARMOR);
+
                         output.accept(ModItems.COPPER_SWORD);
                         output.accept(ModItems.COPPER_PICKAXE);
                         output.accept(ModItems.COPPER_SHOVEL);
                         output.accept(ModItems.COPPER_AXE);
                         output.accept(ModItems.COPPER_HOE);
+
+
                     })
                     .build());
 

@@ -35,5 +35,11 @@ public class ModItemTagProvider extends ItemTagsProvider {
                 .add(ModItems.COPPER_AXE.get());
         tag(ItemTags.HOES)
                 .add(ModItems.COPPER_HOE.get());
+
+        this.tag(ItemTags.TRIMMABLE_ARMOR)
+                .add(ModItems.COPPER_HELMET.get())
+                .add(ModItems.COPPER_CHESTPLATE.get())
+                .add(ModItems.COPPER_LEGGINGS.get())
+                .add(ModItems.COPPER_BOOTS.get());
     }
 }

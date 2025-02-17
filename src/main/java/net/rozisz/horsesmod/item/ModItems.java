@@ -7,6 +7,7 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 import net.rozisz.horsesmod.HorsesMod;
 import net.rozisz.horsesmod.item.custom.FuelItem;
 
+
 public class ModItems {
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(HorsesMod.MOD_ID);
 
@@ -55,6 +56,29 @@ public class ModItems {
     public static final DeferredItem<HoeItem> COPPER_HOE = ITEMS.register("copper_hoe",
             () -> new HoeItem(ModToolTiers.COPPER, new Item.Properties()
                     .attributes(HoeItem.createAttributes(ModToolTiers.COPPER, 0F, -3.0f))));
+
+    public static final DeferredItem<ArmorItem> COPPER_HELMET = ITEMS.register("copper_helmet",
+            () -> new ArmorItem(ModArmorMaterials.COPPER_ARMOR_MATERIAL, ArmorItem.Type.HELMET,
+                    new Item.Properties().durability(ArmorItem.Type.HELMET.getDurability(15))));
+
+    public static final DeferredItem<ArmorItem> COPPER_CHESTPLATE = ITEMS.register("copper_chestplate",
+            () -> new ArmorItem(ModArmorMaterials.COPPER_ARMOR_MATERIAL, ArmorItem.Type.CHESTPLATE,
+                    new Item.Properties().durability(ArmorItem.Type.CHESTPLATE.getDurability(15))));
+
+    public static final DeferredItem<ArmorItem> COPPER_LEGGINGS = ITEMS.register("copper_leggings",
+            () -> new ArmorItem(ModArmorMaterials.COPPER_ARMOR_MATERIAL, ArmorItem.Type.LEGGINGS,
+                    new Item.Properties().durability(ArmorItem.Type.LEGGINGS.getDurability(15))));
+
+    public static final DeferredItem<ArmorItem> COPPER_BOOTS = ITEMS.register("copper_boots",
+            () -> new ArmorItem(ModArmorMaterials.COPPER_ARMOR_MATERIAL, ArmorItem.Type.BOOTS,
+                    new Item.Properties().durability(ArmorItem.Type.BOOTS.getDurability(15))));
+
+    public static final DeferredItem<Item> COPPER_HORSE_ARMOR = ITEMS.register("copper_horse_armor",
+            () -> new AnimalArmorItem(ModArmorMaterials.COPPER_ARMOR_MATERIAL, AnimalArmorItem.BodyType.EQUESTRIAN,
+                    false, new Item.Properties().stacksTo(1)));
+
+
+
     //
 
     public static final DeferredItem<Item> MANURE = ITEMS.register("manure",
